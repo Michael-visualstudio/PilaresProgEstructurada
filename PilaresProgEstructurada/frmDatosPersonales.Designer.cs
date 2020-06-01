@@ -36,6 +36,8 @@
             this.btnAceptar = new System.Windows.Forms.Button();
             this.txtResultado = new System.Windows.Forms.TextBox();
             this.lbNombres = new System.Windows.Forms.Label();
+            this.txtValor = new System.Windows.Forms.TextBox();
+            this.btnPasoValor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -85,7 +87,7 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(468, 123);
+            this.btnAceptar.Location = new System.Drawing.Point(439, 123);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(82, 23);
             this.btnAceptar.TabIndex = 5;
@@ -111,11 +113,29 @@
             this.lbNombres.TabIndex = 7;
             this.lbNombres.Text = "Nombres";
             // 
+            // txtValor
+            // 
+            this.txtValor.Location = new System.Drawing.Point(501, 61);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(133, 20);
+            this.txtValor.TabIndex = 8;
+            // 
+            // btnPasoValor
+            // 
+            this.btnPasoValor.Location = new System.Drawing.Point(536, 123);
+            this.btnPasoValor.Name = "btnPasoValor";
+            this.btnPasoValor.Size = new System.Drawing.Size(98, 23);
+            this.btnPasoValor.TabIndex = 9;
+            this.btnPasoValor.Text = "Paso por Valor";
+            this.btnPasoValor.UseVisualStyleBackColor = true;
+            // 
             // frmDatosPersonales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(706, 370);
+            this.ClientSize = new System.Drawing.Size(717, 374);
+            this.Controls.Add(this.btnPasoValor);
+            this.Controls.Add(this.txtValor);
             this.Controls.Add(this.lbNombres);
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.btnAceptar);
@@ -142,5 +162,7 @@
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.TextBox txtResultado;
         private System.Windows.Forms.Label lbNombres;
+        private System.Windows.Forms.TextBox txtValor;
+        private System.Windows.Forms.Button btnPasoValor;
     }
 }

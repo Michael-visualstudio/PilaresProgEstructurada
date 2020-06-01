@@ -61,5 +61,42 @@ namespace PilaresProgEstructurada
             resul = (a * 10) / (b * 2.5);
             return resul;
         }
+        //tipos de datos en C#
+        //operadores logicos
+        //operadores relacionales
+        //operadores aritmeticos
+        //estructuras repetitivas
+
+        //pasar parametros por valor
+        //cuando se pasa una copia de la variable
+
+        void ejemploPasoValor(int x)
+        {
+            x = x + 100;
+            MessageBox.Show("El nuevo valor de x: " + x.ToString());
+        }
+
+        void ejemploPasoReferencia(ref int a)
+        {//la funcion recibe la variable original (direccion de memoria)
+            //cualquier cambio en esta variable se refleja en la original
+            a = a + 100;
+            MessageBox.Show("El nuevo valor de x: " + a.ToString());
+        }
+
+        private void btnPasoValor_Click(object sender, EventArgs e)
+        {
+            int x = 5; int y = 200;
+            //ejemploPasoValor(x);
+            ejemploPasoReferencia(ref x);
+            this.ejemploParametrosOpcionales(x,y);
+            this.txtValor.Text = x.ToString();
+        }
+        //paso de parametros opcionales
+        void ejemploParametrosOpcionales(int x, int y=10)
+        {
+            x = x + y;
+            MessageBox.Show("Parametro opcional" + y.ToString());
+            MessageBox.Show("El nuevo valor de x:" + x.ToString()); 
+        }
     }
 }
